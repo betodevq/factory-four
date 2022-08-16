@@ -14,7 +14,7 @@ const StatusCard: React.FC<Props> = ({ status }) => {
       })
     : null;
   return (
-    <Card sx={{ maxWidth: 240, marginBottom: 2.5, height: 210 }}>
+    <Card sx={{ maxWidth: 240, marginBottom: 2.5, height: 220 }}>
       <CardContent
         sx={{
           height: "88%",
@@ -51,7 +51,7 @@ const StatusCard: React.FC<Props> = ({ status }) => {
           )}
         </div>
         {time && (
-          <Typography color="text.secondary">Last refresh: {time}</Typography>
+          <Typography gutterBottom color="text.secondary">Last refresh: {time}</Typography>
         )}
       </CardContent>
     </Card>
