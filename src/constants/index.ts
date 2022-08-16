@@ -1,6 +1,6 @@
 export const REFRESH_INTERVAL: number = 15000; //ms
 
-export const MODULES: String[] = [
+export const SERVICES: string[] = [
   "accounts",
   "assets",
   "customers",
@@ -21,4 +21,4 @@ export const MODULES: String[] = [
   "workflows",
 ];
 
-export const API_BASE_URL: string = "https://api.factoryfour.com/API_NAME/health/status";
+export const API_BASE_URL: string = "https://api.factoryfour.com/";
