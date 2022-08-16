@@ -1,4 +1,9 @@
-.StatusCard-card {
-  background-color: blanchedalmond;
-  border: 1px solid black;
+.StatusCard-message{
+  color: white;
+  text-align: center;
+  background-color: green;
+}
+
+.--red{
+  background-color: red;
 }

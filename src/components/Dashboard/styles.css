@@ -1,10 +1,9 @@
 .dashboard-body {
   margin: 0 auto;
   width: 85%;
-  margin-top: 8%
 }
 
 .dashboard-header {
-  margin-bottom: 1rem;
-  background-color: slategray;
+  padding: 1.5rem 0;
+  text-align: center;
 }
