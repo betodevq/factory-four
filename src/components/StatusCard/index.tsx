@@ -1,6 +1,5 @@
 import React from "react";
 import "./styles.css";
-import * as Constants from "../../constants";
 import { CheckCircleOutline, ErrorOutline } from "@mui/icons-material";
 import { Card, CardContent, Typography, Chip } from "@mui/material";
 

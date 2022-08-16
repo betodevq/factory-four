@@ -1,13 +1,12 @@
 import React from "react";
 import "./styles.css";
 import { Grid } from "@mui/material";
-import * as Constants from "../../constants";
 import StatusCard from "../StatusCard";
 import { useServiceStatus } from "../../hooks/useServiceStatus";
 import { Typography, Backdrop } from "@mui/material";
-import CircularProgress from '@mui/material/CircularProgress';
+import CircularProgress from "@mui/material/CircularProgress";
 
-function Dashboard() {
+const Dashboard :React.FC<any> = () => {
   const data: any[] = useServiceStatus();
   return (
     <>
@@ -20,15 +19,7 @@ function Dashboard() {
         {data?.length > 0 ? (
           <Grid container columnSpacing={1}>
             {data.map((status, idx) => (
-              <Grid
-                key={idx}
-                item
-                className="StatusCard-card"
-                xs={6}
-                sm={4}
-                md={3}
-                lg={2}
-              >
+              <Grid key={idx} item xs={6} sm={4} md={3} lg={2}>
                 <StatusCard status={status} />
               </Grid>
             ))}
